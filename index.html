@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Portfólio | Júnior Santos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="foguete.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Home -->
+    <section id="home" class="home">
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+                <source src="Inicial.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos HTML5.
+            </video>
+        </div>
+        <div class="intro">
+            <h1>Olá, eu sou o Júnior Santos🚀</h1>
+            <p>Analista de Dados, Desenvolvedor, Engenheiro e Curioso...Focando sempre em soluções modernas e eficientes.</p>
+            <a href="#projects" class="btn">Veja meus projetos</a>
+        </div>
+    </section>
+    
+
+<!-- Seção Sobre Mim -->
+<section id="sobre" class="sobre">
+    <h2>Sobre Mim</h2>
+    <div class="sobre-content">
+        <!-- Texto sobre o profissional -->
+        <div class="sobre-text">
+            <p>
+                Com formação em Engenharia Química pela Universidade Federal do Rio Grande do Norte, desenvolvi uma base sólida que combina engenharia, tecnologia e inovação. Durante minha trajetória acadêmica, atuei como diretor financeiro da SPE (Society of Petroleum Engineers), membro ativo do Potiguar Rocket Design, integrante da AIChE e do PET de Engenharia Química, contribuindo para projetos como a criação de sistemas de biogás, bombeamento de água por energia solar e estudos em propelentes e compósitos.
+            </p>
+            <p>
+                Minha experiência profissional abrange áreas como análise de dados e gestão de processos. Atualmente, como estagiário em performance na Gentil Negócios, desenvolvo dashboards estratégicos, realizo auditorias e contribuo para o alinhamento de OKRs, fornecendo insights que otimizam a tomada de decisões. Anteriormente, atuei na Teleperformance, gerenciando indicadores de mídias sociais e alcançando resultados expressivos em satisfação e performance.
+            </p>
+            <p>
+                Tenho como meta atuar na interseção entre análise de dados, tecnologia e sustentabilidade, utilizando ferramentas modernas para impulsionar a eficiência organizacional. Sou apaixonado por desafios que me permitam aplicar minhas habilidades técnicas e estratégicas, contribuindo para inovações que transformem realidades e promovam impacto positivo no mundo corporativo e acadêmico.
+            </p>
+            <p>
+                Gosto de me considerar um pesquisador curioso e um engenheiro comprometido com a inovação. Estou sempre pronto para enfrentar novos desafios e contribuir em projetos que busquem resultados concretos e positivos.
+            </p>
+        </div>
+
+        <!-- Painel de Habilidades -->
+        <div class="skills-panel">
+            <h3>Habilidades</h3>
+            <div class="skill">
+                <label for="python">Python</label>
+                <div class="progress">
+                    <div class="progress-bar python" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="sql">SQL</label>
+                <div class="progress">
+                    <div class="progress-bar sql" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="frontend">Front-End</label>
+                <div class="progress">
+                    <div class="progress-bar frontend" style="width: 70%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="backend">Back-End</label>
+                <div class="progress">
+                    <div class="progress-bar backend" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="process-mapping">Mapeamento de Processos</label>
+                <div class="progress">
+                    <div class="progress-bar process-mapping" style="width: 90%"></div>
+                </div>
+            </div>
+            <!-- Habilidades relacionadas à Análise de Dados -->
+            <div class="skill">
+                <label for="statistical-analysis">Análise Estatística</label>
+                <div class="progress">
+                    <div class="progress-bar statistical-analysis" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="machine-learning">Machine Learning</label>
+                <div class="progress">
+                    <div class="progress-bar machine-learning" style="width: 70%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="data-visualization">Visualização de Dados</label>
+                <div class="progress">
+                    <div class="progress-bar data-visualization" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="data-wrangling">Data Wrangling</label>
+                <div class="progress">
+                    <div class="progress-bar data-wrangling" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <section id="projects" class="projects">
+        <h2>Meus Projetos📊</h2>
+        <div class="projects-container">
+            <!-- Projeto 1 -->
+            <div class="project-item" id="project1">
+                <div class="image-container" onclick="showDescription(1)">
+                    <img src="Vagas.jpg" alt="Dashboard de Acompanhamento de Vagas" class="blurred-image" id="image1">
+                    <div class="overlay" id="overlay1">
+                        <div class="project-description">
+                            <p class="emoji">💼</p>
+                            <p>Esse é um dashboard interativo que oferece uma análise abrangente das vagas de emprego...</p>
+                            <button class="back-button" onclick="hideDescription(1)">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+                <h3>Dashboard de acompanhamento de Vagas</h3>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="project-item" id="project2">
+                <div class="image-container" onclick="showDescription(2)">
+                    <img src="Cargos e Salarios.jpg" alt="Dashboard de Cargos e Salários" class="blurred-image" id="image2">
+                    <div class="overlay" id="overlay2">
+                        <div class="project-description">
+                            <p class="emoji">📊</p>
+                            <p>Com o objetivo de proporcionar uma visibilidade mais detalhada para os gestores...</p>
+                            <button class="back-button" onclick="hideDescription(2)">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+                <h3>Dashboard de Cargos e Salários</h3>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="project-item" id="project3">
+                <div class="image-container" onclick="showDescription(3)">
+                    <img src="Orçamento.jpg" alt="Dashboard de Orçamento" class="blurred-image" id="image3">
+                    <div class="overlay" id="overlay3">
+                        <div class="project-description">
+                            <p class="emoji">💰</p>
+                            <p>Com o objetivo de atuar estrategicamente, desenvolvi um dashboard para o acompanhamento do orçamento...</p>
+                            <button class="back-button" onclick="hideDescription(3)">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+                <h3>Dashboard de Orçamento</h3>
+            </div>
+            <!-- Projeto 4 -->
+            <div class="project-item" id="project4">
+                <div class="image-container" onclick="showDescription(4)">
+                    <img src="Headcount.jpg" alt="Dashboard de headcount" class="blurred-image" id="image4">
+                    <div class="overlay" id="overlay4">
+                        <div class="project-description">
+                            <p class="emoji">👥</p>
+                            <p>Com o intuito de garantir um acompanhamento estratégico, desenvolvi uma análise detalhada de headcount...</p>
+                            <button class="back-button" onclick="hideDescription(4)">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+                <h3>Dashboard de Headcount</h3>
+            </div>
+        </div>
+    </section>
+    <section id="automations" class="automations">
+        <h2>Automações e desenvolvimento WEB🌐</h2>
+        <div class="automations-container">
+            <!-- Sistema 1 -->
+            <div class="automation-item" id="automation1">
+                <div class="image-container">
+                    <img src="Botileza.jpg" alt="Sistema de Automação 1" class="blurred-image" id="image1">
+                </div>
+                <h3>Teste comportamental</h3>
+                <p>Este sistema gera um teste comportamental personalizado com base nas respostas fornecidas, permitindo identificar os principais pontos de aprendizagem que a equipe precisa melhorar. A partir dos resultados, é possível obter insights detalhados sobre as áreas de desenvolvimento, ajudando a traçar ações estratégicas para o aprimoramento contínuo da equipe. Dessa forma, a organização pode direcionar suas iniciativas de treinamento e desenvolvimento de maneira mais assertiva, alinhando o crescimento dos colaboradores às necessidades e metas estratégicas da empresa.</p>
+            </div>
+    
+            <!-- Sistema 2 -->
+            <div class="automation-item" id="automation2">
+                <div class="image-container">
+                    <img src="eleva.jpg" alt="Sistema de Automação 2" class="blurred-image" id="image2">
+                </div>
+                <h3>..............................
+                    Sistema dedicado para alunos</h3>
+                <p>Desenvolvi uma plataforma com login único, exclusiva para colaboradores que participam de um programa de capacitação para líderes. Essa plataforma centraliza o acesso a conteúdos, atividades e recursos de aprendizagem, proporcionando uma experiência personalizada para cada participante. Com o login único, os colaboradores podem acessar de forma segura e prática todos os materiais necessários para seu desenvolvimento, permitindo o acompanhamento do progresso e a interação com outros participantes, promovendo uma formação contínua e estratégica para fortalecer a liderança dentro da empresa.</p>
+            </div>
+
+            <div class="automation-item" id="automation2">
+                <div class="image-container">
+                    <img src="automa.jpg" alt="Sistema de Automação 2" class="blurred-image" id="image2">
+                </div>
+                <h3>Sistema dedicado para alunos</h3>
+                <p>Desenvolvi um sistema em Python para a criação automatizada de cards de reconhecimento para colaboradores, com o objetivo de eliminar o trabalho operacional e manual de edição para mais de 1000 funcionários. O sistema gera os cards de forma dinâmica e personalizada, com base em dados de cada colaborador, como nome, cargo e realizações. Isso facilita a distribuição de reconhecimentos de maneira escalável e eficiente, além de garantir consistência na comunicação e otimização de tempo na gestão de grandes volumes de colaboradores.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+<!-- Seção Contato -->
+<section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>Você pode me encontrar no LinkedIn ou fazer o download do meu currículo clicando nos links abaixo:</p>
+    <div class="contact-links">
+        <div class="contact-item">
+            <a href="https://www.linkedin.com/in/genilson-junior" target="_blank" class="contact-link">
+                <i class="fab fa-linkedin"></i>
+                <span>Meu LinkedIn</span>
+            </a>
+        </div>
+        <div class="contact-item">
+            <!-- Link para baixar o currículo -->
+            <a href="CV Genilson Júnior.pdf" download="Curriculo_Junior" class="contact-link">
+                <i class="fas fa-file-pdf"></i>
+                <span>Baixar meu Currículo</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
